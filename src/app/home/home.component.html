@@ -1,0 +1,77 @@
+<div class="home">
+    <div class="home-div1">
+        <div>
+            <p>iPhone 14 Series</p>
+            <i class="fa-brands fa-apple"></i>
+        </div>
+        <p>Up to 10% <br>off Voucher</p>
+        <div class="home-div2">
+            <a href="">Shop now</a>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <img src="assets\images\home_img\img1.png" alt="">
+</div>
+<div class="our_products">
+    <p id="title">Explore Our Products</p>
+    <div class="products">
+        <ng-container *ngFor="let prod of products; index as i">
+            <div>
+                <ng-container *ngIf="i<=7 && viewbtn.innerHTML==='View All Products'">
+                    <div class="product">
+                        <div class="items" routerLink="/Home/shop/{{prod.title}}/{{prod.id}}" (click)="StoreProduct(prod.id)">
+                            <img [src]="prod.image" alt="">
+                            <p class="product-cont">{{prod.title}}</p>
+                            <div class="amount">
+                                <p class="product-cont">${{prod.price}}</p>
+                                <p class="product-cont">({{prod.rating.count}})</p>
+                            </div>
+                            <button id="cart" routerLink="/cart/{{prod.id}}" (click)="addToCart(prod.id)">ADD TO CART</button>
+                        </div>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="viewbtn.innerHTML==='View Less Products'">
+                    <div class="product" routerLink="/Home/shop/{{prod.title}}/{{prod.id}}" (click)="StoreProduct(prod.id)">
+                        <div class="items">
+                            <img [src]="prod.image" alt="">
+                            <p class="product-cont">{{prod.title}}</p>
+                            <div class="amount">
+                                <p class="product-cont">${{prod.price}}</p>
+                                <p class="product-cont">({{prod.rating.count}})</p>
+                            </div>
+                            <button id="cart" routerLink="/cart/{{prod.id}}" (click)="addToCart(prod.id)">ADD TO CART</button>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </ng-container>
+    </div>
+    <button id="view_prod" (click)="viewAllProducts(viewbtn)" #viewbtn>View All Products</button>
+</div>
+
+<div class="categories">
+    <div>
+        <p class="category-cont" id="cate-cont">Categories</p>
+        <p class="category-cont" id="cate-cont2">Enhance Your <br>Music Experience</p>
+        <button id="cate-buynow">Buy Now !</button>
+    </div>
+    <img src="assets\images\home_img\img6.png" alt="">
+</div>
+<div class="advantages">
+    <div class="adv-div">
+        <i class="fa-solid fa-truck"></i>
+        <p>FREE AND FAST DELIVERY</p>
+        <p>Free delivery for all orders over $140</p>
+    </div>
+    <div class="adv-div">
+        <i class="fa-solid fa-headset"></i>
+        <p>24/7 CUSTOMER SERVICE</p>
+        <p>Friendly 24/7 customer support</p>
+    </div>
+    <div class="adv-div">
+        <i class="fa-solid fa-certificate"></i>
+        <p>MONEY BACK GUARANTEE</p>
+        <p>We return money within 30 days</p>
+    </div>
+</div>
+<app-footer></app-footer>

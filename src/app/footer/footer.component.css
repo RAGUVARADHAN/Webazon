@@ -1,0 +1,23 @@
+.footer 
+{
+    display: flex;
+    justify-content:space-evenly;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+.footer-div p
+{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.footer-div b, .footer-div p:nth-child(1)
+{
+    font-size: 20px;
+}
+.footer p 
+{
+    font-size: 16px;
+    font-weight: lighter;
+}

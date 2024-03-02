@@ -1,0 +1,115 @@
+.about 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.about img 
+{
+    height: 500px;
+    width: auto;
+}
+.about div:nth-child(1)
+{
+    margin-left: 100px;
+}
+.about-div1 p:nth-child(1)
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing:5px;
+}
+.about-div1 p:nth-child(2),.about-div1 p:nth-child(3)
+{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.about-comp 
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.about-comp div 
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgb(196, 191, 191);
+    padding : 20px;
+    border-radius: 10px;
+}
+.about-comp1 i 
+{
+    font-size: 36px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 5px grey;
+}
+.about-comp1 p:nth-child(2)
+{
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 10px;
+}
+.about-comp1 p:nth-child(3)
+{
+    font-size: 12px;
+}
+.about-comp1:hover p 
+{
+    color: white;
+}
+.about-comp1:hover
+{
+    background-color:rgb(251, 52, 52);
+}
+.about-comp1:hover i 
+{
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 0px 5px rgb(250, 106, 106)
+}
+.employee 
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'Poppins',sans-serif;
+    padding: 30px 0px;
+}
+.employee-div img 
+{
+    border: 1px solid black;
+}
+.employee-div p:nth-child(2)
+{
+    font-weight: 600;
+}
+.arrow
+{
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-less-than
+{
+    padding: 10px;
+    background-color: rgb(251, 52, 52);
+    color: white;
+}
+.fa-greater-than
+{
+    background-color: rgb(251, 52, 52);
+    margin-left: 10px;  
+    padding: 10px;
+    color: white;
+} 

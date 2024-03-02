@@ -1,0 +1,64 @@
+<div class="buy-comp">
+    <p id="head">Billing Details</p>
+    <div class="buy">
+        <div class="buy-details">
+            <form action="">
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="firstname" required #fname><br><br>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" #lname><br><br>
+                <label for="Address">Street Address</label><br>
+                <input type="text" id="Address" required #addr><br><br>
+                <label for="Apartment">Apartment,floor,etc.(optional)</label><br>
+                <input type="text" id="Apartment" #apart><br><br>
+                <label for="City">Town/City</label><br>
+                <input type="text" id="City" #city><br><br>
+                <label for="Phone">Phone Number</label><br>
+                <input type="number" id="Phone" #phn><br><br>
+                <label for="Email">Email Address</label><br>
+                <input type="email" id="Email" #email><br><br>
+                <div class="save-info">
+                    <input type="checkbox">
+                    <label for="save" id="save">Save this information for faster check-out next time</label>
+                </div>
+            </form>
+        </div>
+        <div class="prod-details">
+            <div class="details">
+                <img src="{{buy_product.image}}" alt="">
+                <p id="prod_name">{{buy_product.title}}</p>
+                <p>{{buy_product.price}}</p>
+            </div>
+            <div class="details">
+                <p>Quantity</p>
+                <p>{{quantity}}</p>
+            </div><hr>
+            <div class="details">
+                <p>Subtotal</p>
+                <p>{{buy_product.price * quantity}}</p>
+            </div>
+            <hr>
+            <div class="details">
+                <p>Shipping</p>
+                <p>Free</p>
+            </div>
+            <hr>
+            <div class="details">
+                <p>Total</p>
+                <p>{{buy_product.price * quantity}}</p>
+            </div>
+            <div class="payment-mode">
+                <input type="radio" name="payment" #bank>
+                <label for="Bank">Bank</label><br>
+                <input type="radio" name="payment" #bank>
+                <label for="Cash">Cash on delivery</label>
+            </div>
+            <div class="apply">
+                <input type="text" placeholder="Coupon Code" #couponvalue>
+                <button (click)="ApplyCoupon()">Apply Coupon</button>
+            </div>
+            <p *ngIf="coupon && couponvalue.value!=''">Coupon applied!</p>
+            <button class="place" (click)="orderPlace(fname.value,lname.value,addr.value,apart.value,city.value,phn.value,email.value,bank.value)">Place Order</button>
+        </div>
+    </div>
+</div>

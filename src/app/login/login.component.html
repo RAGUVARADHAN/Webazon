@@ -1,0 +1,15 @@
+<div class="signup">
+    <img src="assets\images\signup\img1.jpg" alt="">
+    <div class="signup-div">
+        <p>Log in to Exclusive</p>
+        <p>Enter your details below</p>
+        <form action="">
+            <input type="email" placeholder="Email or Phone Number" class="details" required [(ngModel)]="email" [ngModelOptions]="{standalone: true}"><br>
+            <input type="password" placeholder="Password" class="details" required [(ngModel)]="password" [ngModelOptions]="{standalone: true}"><br>
+            <button class="details" (click)="getDetail()">Log In</button>
+        </form>
+        <p routerLink="/SignUp" class="details">Forget Password?</p>
+    </div>
+</div>
+<app-footer></app-footer>
+

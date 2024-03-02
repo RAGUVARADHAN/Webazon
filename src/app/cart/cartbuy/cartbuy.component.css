@@ -1,0 +1,119 @@
+#head
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+.buy-comp
+{
+    padding: 20px 100px;
+    margin-top: 50px;
+}
+.buy
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 40px;
+}
+input[type=text],input[type=email],input[type=number],label 
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    opacity: 0.8;
+}
+input[type=text],input[type=email],input[type=number] 
+{
+    height: 40px;
+    width: 500px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.save-info 
+{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.save-info label 
+{
+    font-size: 12px;
+    opacity: 1;
+}
+.buy-details 
+{
+    padding: 10px;
+}
+.prod-details 
+{
+    font-family: 'Poppins', sans-serif;
+    width: 400px;
+    padding: 10px;
+}
+.details 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.details p 
+{
+    margin-left: 30px;
+}
+.details img 
+{
+    height: 100px;
+    width: 100px;
+}
+#prod_name 
+{
+    margin-right: 100px;
+    font-size: 24px;
+}
+hr 
+{
+    margin-top: 10px;
+}
+.payment-mode 
+{
+    margin-top: 30px;
+}
+.payment-mode label  
+{
+    color: black;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.payment-mode input 
+{
+    margin-top: 10px;
+}
+.apply 
+{
+    margin-top: 25px;
+    display: flex;
+}
+.apply input[type=text]
+{
+    width: 300px;
+}
+.apply button
+{
+    background-color: rgb(251, 52, 52);
+    color: white;
+    border: none;
+    padding: 0px 2px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.place 
+{
+    background-color: rgb(251, 52, 52);
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}

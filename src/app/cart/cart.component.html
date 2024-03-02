@@ -1,0 +1,51 @@
+<div class="cart" *ngIf="cartproduct.length ; else emptycart">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <ng-container *ngFor="let prod of cartproduct; index as i">
+            <tr>
+                <td><img src="{{prod.image}}" alt=""><i class="fa-solid fa-xmark" (click)="removeProd(prod.id)"></i></td>
+                <td #price>{{prod.price}}</td>
+                <td><input type="number" class="quantity" value="1" min="1" #quantity (change) ="validateInput($event,i,quantity)"></td>
+                <td>{{prod.price * prod.rating.count}}</td>
+            </tr>
+        </ng-container>
+    </table>
+
+
+    <div class="coupon">
+        <div>
+            <input type="text" placeholder="Apply coupon" #couponvalue>
+            <button (click)="ApplyCoupon()">Apply Coupon</button>
+            <p *ngIf="coupon && couponvalue.value!=''">Coupon applied!</p>
+        </div>
+        
+        <div class="checkout">
+            <p class="total">Cart Total</p>
+            <div class="cart-total">
+                <p>Subtotal:</p>
+                <p>{{amttot}}</p>
+            </div>
+            <br><hr>
+            <div class="cart-total">
+                <p>Shipping:</p>
+                <p>Free</p>
+            </div>
+            <br><hr>
+            <div class="cart-total">
+                <p>Total:</p>
+                <p>{{amttot}}</p>
+            </div>
+            <button id="checkout" routerLink="/buy">Proceed to checkout</button>
+        </div>
+    </div>
+</div>
+<ng-template #emptycart>
+    <div class="empty">
+        <p>Cart is empty</p>
+    </div>
+</ng-template>

@@ -1,0 +1,28 @@
+<div class="shop">
+    <img src="{{product.image}}" alt="">
+    <div class="details">
+        <p>{{product.title}}</p>
+        <p>{{(product.price * quan *100)/100}}</p>
+        <p>{{product.description}}</p>
+        <div class="quantity">
+            <input type="number" min="0" id="quantity" value="1" #value (change)="changeValue(value)">
+            <button (click)="ShopPage()">Buy Now</button>
+        </div>
+        <div class="delivery">
+            <div class="delivery-div">
+                <i class="fa-solid fa-truck"></i>
+                <div class="del-details">
+                    <p>Free Delivery</p>
+                    <p>Enter your postal code for delivery availability</p>
+                </div>
+            </div>
+            <div class="delivery-div">
+                <i class="fa-solid fa-right-left"></i>
+                <div class="del-details">
+                    <p>Return Delivery</p>
+                    <p>Free 30 Days Delivery Returns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

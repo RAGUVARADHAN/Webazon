@@ -1,0 +1,15 @@
+<div class="signup">
+    <img src="assets\images\signup\img1.jpg" alt="">
+    <div class="signup-div">
+        <p>Create an account</p>
+        <p>Enter your details below</p>
+        <form action="">
+            <input type="text" placeholder="Name" class="details" required #name><br>
+            <input type="email" placeholder="Email or Phone Number" class="details" required [(ngModel)]="email" [ngModelOptions]="{standalone: true}"><br>
+            <input type="password" placeholder="Password" class="details" required [(ngModel)]="password" [ngModelOptions]="{standalone: true}"><br>
+            <input type="submit" class="details" value="Create account">
+        </form>
+        <p class="details">Already have account? <a routerLink="/Login" (click)="changelogin()">Log in</a></p>
+    </div>
+</div>
+<app-footer></app-footer>

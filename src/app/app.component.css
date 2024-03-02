@@ -1,0 +1,68 @@
+#offer  
+{
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+p
+{
+    font-family: 'Poppins', sans-serif;
+}
+.app
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.app p 
+{
+    font-size: 32px;
+    font-weight: 600;
+}
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    font-weight: 500;
+}
+li
+{
+    margin-right: 40px;
+}
+a 
+{
+    text-decoration: none;
+}
+.active 
+{
+    border-bottom: 1px solid rgb(97, 91, 91);
+}
+li:hover
+{
+    border-bottom: 1px solid rgb(150, 147, 147);
+}
+.app-icon 
+{
+    font-size: 20px;
+    padding: 0px 0px;
+}
+.app-icon i 
+{
+    margin-right: 25px;
+}
+#cartlen
+{
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
+}

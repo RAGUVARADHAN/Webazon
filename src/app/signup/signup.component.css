@@ -1,0 +1,51 @@
+.signup
+{
+    display: flex;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 25px;
+}
+.signup img 
+{
+    height: 500px;
+    width: auto;
+}
+.signup-div
+{
+    margin-left: 150px;
+}
+.signup-div p:nth-child(1) 
+{
+    font-size: 48px;
+}
+.signup-div p:nth-child(2)
+{
+    margin-top: 20px;
+    opacity: 0.7;
+}
+.details 
+{
+    margin-top: 40px;
+}
+input[type=text], input[type=password], input[type=email]
+{
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+}
+input[type=submit] 
+{
+    border: none;
+    background-color: rgb(251, 52, 52);
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signup-div a 
+{
+    border-bottom: 1px solid rgb(50, 47, 47);
+}
